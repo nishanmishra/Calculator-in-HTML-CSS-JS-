@@ -1,0 +1,104 @@
+<!--By NISHAN MISHRA (@nishanmishra)--> 
+ <!DOCTYPE HTML>
+ <html>
+   <head><title>Calculator in HTML CSS JS by @nishanmishra </title></head>
+   <body>
+<center>
+<div class="canvas">
+    <h4>@nishanmishra</h4>
+  <form name="forms">
+      
+    <input class="screen" type="text" name="answer">
+    <br><br>
+    <div class="buttons">
+      
+    <input type="button" value="+" onclick="forms.answer.value += '+'">
+      <input type="button" value="*" onclick="forms.answer.value += '*'">
+      <input type="button" value="/" onclick="forms.answer.value += '/'">
+      <br><br>
+      <input type="button" value="-" onclick="forms.answer.value += '-'">
+      <input type="button" value="1" onclick="forms.answer.value += '1'">
+      <input type="button" value="2" onclick="forms.answer.value += '2'">
+      <br><br>
+      <input type="button" value="3" onclick="forms.answer.value += '3'">
+      
+        <input type="button" value="4" onclick="forms.answer.value += '4'">
+      <input type="button" value="5" onclick="forms.answer.value += '5'">
+      <br><br>
+      <input type="button" value="6" onclick="forms.answer.value += '6'">
+      <input type="button" value="7" onclick="forms.answer.value += '7'">
+      <input type="button" value="8" onclick="forms.answer.value += '8'">
+      <br><br>
+      <input type="button" value="9" onclick="forms.answer.value += '9'">
+      <input type="button" value="0" onclick="forms.answer.value += '0'">
+      <input type="button" value="=" onclick="forms.answer.value = eval(forms.answer.value) ">
+      <br><br>
+    <input class="ac" type="button" value="AC" onclick="forms.answer.value =''">
+    </div>
+    
+  </form>
+</div>
+
+<style>
+body{
+  background:white;
+  padding-top:70px;
+}
+form{
+  position:relative;
+  bottom:40px;
+}
+.canvas{
+  border:none;
+  width:300px;
+  padding-top:30px;
+  padding-bottom: 10px;
+  border-radius: 10px;
+  height:490px;
+  background:#222328;
+  box-shadow: 0px 5px 13px grey;
+}
+  .buttons{
+    width:250px;
+    height:500px;
+  }
+  .screen{
+    width:230px;
+    background:#C2C4D8;
+    box-shadow: inset 0 0 20000px rgba(255, 255, 255, .5);
+    filter: blur(0.4px);
+    height:70px;
+    border:none;
+    border-radius: 5px;
+    font-size:24px;
+    text-align: left;
+    color: black;
+    padding:10px;
+  }
+  input{
+    width:80px;
+    border-radius:3px;
+    height:40px;
+    font-size:15px;
+    color:white;
+    background:#292A30 ;
+    border:1px solid #9C9EB4;
+  }
+  input:focus{
+    background:#479FF7;
+    border:1px solid #C0C1D0;
+  }
+  .ac{
+    width:250px;
+    border:1px solid #9C9EB4;
+  }
+  h4{
+    color:white;
+    position: relative;
+    bottom:30px;
+  }
+</style>
+</center>
+</body>
+</html>
+  
